@@ -1,10 +1,10 @@
 package Cars;
 
 public abstract class Car {
+    //attributes we want for all cars
     double currentSpeed = 0;
     double acceleration = 10;
     double deceleration = .5;
-    //int stockA = 10, stockB = 10, stockC =10, stockD = 10;
 
     //constructor
     Car (double currentSpeed, double acceleration,double deceleration) {
@@ -13,6 +13,7 @@ public abstract class Car {
         this.deceleration = deceleration;
     }
 
+    //methods we want to use for all cars
     public void accelerate(){
         currentSpeed += acceleration;
     }
